@@ -1,23 +1,13 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 from distutils.core import setup
 from setuptools import find_packages
-import sys
-
-# python2 and python3 support
-try:
-    reload
-except NameError:
-    # py3k has unicode by default
-    pass
-else:
-    reload(sys).setdefaultencoding('utf-8')
 
 
 setup(
     name='django-tabbed-admin',
-    version='1.0.4',
-    author='Guillaume Pousseo',
-    author_email='guillaumepousseo@revsquare.com',
+    version='1.0.5',
+    author='Brawn1',
+    author_email='guenter.brawn@gmail.com',
     description='Easily add tabs to django admin forms.',
     long_description=open('README.rst').read(),
     url='http://www.revsquare.com',
@@ -35,5 +25,8 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
 )
